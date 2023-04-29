@@ -4,11 +4,11 @@ WPF 스터디 시즌 3 문서입니다.
 
 ## Content
 
-- [x] 1. Button
+- [x] 1. [Button](#1-button)
 - [ ] 2. ControlTemplate
 - [ ] 3. DataTemplate
 - [ ] 4. Trigger
-- [ ] 5. ContentControl
+- [ ] 5. [ContentControl](#5-contentcontrol)
 - [ ] 6. ListBox
 - [ ] 7. ListBoxItem
 - [ ] 8. ItemsControl
@@ -19,7 +19,11 @@ WPF 스터디 시즌 3 문서입니다.
 - [ ] 13. NugetPackage
 
 ## 1. Button
-- Content -> 내용
+- [ContentControl](#5-contentcontrol)을 상속한다.
+- 즉, ```Content``` 프로퍼티를 갖고 있으며 이는 곧 Button의 내용이다.
+```xml
+<Button Content="버튼"/>
+```
 
 ## 2. ControlTemplate
 
