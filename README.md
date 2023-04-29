@@ -4,18 +4,16 @@ WPF 스터디 시즌 3 문서입니다.
 
 ## Content
 
-# wpf-study
-
-- [x] 1. Button 이동
-- [x] 1. DataTemplate
-- [ ] 1. ControlTemplate
-- [ ] 1. Trigger
-- [ ] 1. ContentControl
-- [ ] 1. ListBox
-- [ ] 1. ListBoxItem
-- [ ] 1. ItemsControl
-- [ ] 1. CustomControl
-- [ ] 1. GetContainerItemForOverride
-- [ ] 1. AutoGrid.Core
-- [ ] 1. CommunityToolkit
-- [ ] 1. NugetPackage
+- [ ] 1. Button
+- [ ] 2. DataTemplate
+- [ ] 3. ControlTemplate
+- [ ] 4. Trigger
+- [ ] 5. ContentControl
+- [ ] 6. ListBox
+- [ ] 7. ListBoxItem
+- [ ] 8. ItemsControl
+- [ ] 9. CustomControl
+- [ ] 10. GetContainerItemForOverride
+- [ ] 11. AutoGrid.Core
+- [ ] 12. CommunityToolkit
+- [ ] 13. NugetPackage
