@@ -4,9 +4,9 @@ WPF 스터디 시즌 3 문서입니다.
 
 ## Content
 
-- [ ] 1. Button
-- [ ] 2. DataTemplate
-- [ ] 3. ControlTemplate
+- [x] 1. Button
+- [ ] 2. ControlTemplate
+- [ ] 3. DataTemplate
 - [ ] 4. Trigger
 - [ ] 5. ContentControl
 - [ ] 6. ListBox
@@ -18,7 +18,40 @@ WPF 스터디 시즌 3 문서입니다.
 - [ ] 12. CommunityToolkit
 - [ ] 13. NugetPackage
 
+## 1. Button
+- Content -> 내용
 
-## Button
-- 
-- 
+## 2. ControlTemplate
+
+- Template -> ControlTemplate
+- ControlTemplate -> TargetType
+
+## 3. DataTemplate
+
+TBD...
+
+## 4. Trigger
+
+TBD...
+
+## 5. ContentControl
+
+| 클래스 | 부모 클래스 |
+|:------|:------------|
+| Button | ButtonBase |
+| CheckBox | ContentControl |
+| RadioButton | ContentControl |
+| ToggleButton | ContentControl |
+| ListBoxItem | ContentControl |
+| Label | ContentControl |
+| ComboBoxItem | ContentControl |
+| ListViewItem | ContentControl |
+| TreeViewItem | ContentControl |
+| GroupBox | ContentControl |
+| Window | ContentControl |
+| UserControl | ContentControl |
+| ScrollViewer | ContentControl |
+
+
+
+
