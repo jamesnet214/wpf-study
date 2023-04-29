@@ -19,12 +19,12 @@ WPF 스터디 시즌 3 문서입니다.
 - [ ] 13. NugetPackage
 
 ## 1. Button
-
-TBD...
+- Content -> 내용
 
 ## 2. ControlTemplate
 
-TBD...
+- Template -> ControlTemplate
+- ControlTemplate -> TargetType
 
 ## 3. DataTemplate
 
