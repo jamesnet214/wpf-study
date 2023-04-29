@@ -4,9 +4,9 @@ WPF 스터디 시즌 3 문서입니다.
 
 ## Content
 
-- [ ] 1. Button
-- [ ] 2. DataTemplate
-- [ ] 3. ControlTemplate
+- [v] 1. Button
+- [ ] 2. ControlTemplate
+- [ ] 3. DataTemplate
 - [ ] 4. Trigger
 - [ ] 5. ContentControl
 - [ ] 6. ListBox
@@ -19,6 +19,18 @@ WPF 스터디 시즌 3 문서입니다.
 - [ ] 13. NugetPackage
 
 
-## Button
-- 
-- 
+## 1. Button
+
+TBD...
+
+## 2. ControlTemplate
+
+TBD...
+
+## 3. DataTemplate
+
+TBD...
+
+## 4. Trigger
+
+TBD...
