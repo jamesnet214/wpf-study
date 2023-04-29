@@ -39,6 +39,18 @@ TBD...
 | 클래스 | 부모 클래스 |
 |:------|:------------|
 | Button | ButtonBase |
+| CheckBox | ContentControl |
+| RadioButton | ContentControl |
+| ToggleButton | ContentControl |
+| ListBoxItem | ContentControl |
+| Label | ContentControl |
+| ComboBoxItem | ContentControl |
+| ListViewItem | ContentControl |
+| TreeViewItem | ContentControl |
+| GroupBox | ContentControl |
+| Window | ContentControl |
+| UserControl | ContentControl |
+| ScrollViewer | ContentControl |
 
 
 
