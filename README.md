@@ -33,3 +33,13 @@ TBD...
 ## 4. Trigger
 
 TBD...
+
+## 5. ContentControl
+
+| 클래스 | 부모 클래스 |
+|:------|:------------|
+| Button | ButtonBase |
+
+
+
+
