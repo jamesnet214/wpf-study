@@ -6,8 +6,8 @@ WPF 스터디 시즌 3 문서입니다.
 
 # wpf-study
 
-- [ ] 1. Button 이동
-- [ ] 1. DataTemplate
+- [x] 1. Button 이동
+- [x] 1. DataTemplate
 - [ ] 1. ControlTemplate
 - [ ] 1. Trigger
 - [ ] 1. ContentControl
