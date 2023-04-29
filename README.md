@@ -4,7 +4,7 @@ WPF 스터디 시즌 3 문서입니다.
 
 ## Content
 
-- [v] 1. Button
+- [x] 1. Button
 - [ ] 2. ControlTemplate
 - [ ] 3. DataTemplate
 - [ ] 4. Trigger
