@@ -36,6 +36,70 @@ TBD...
 
 ## 5. ContentControl
 
+- ```Content``` 프로퍼티를 갖고 있다.
+- ```Content``` 타입은 ```object``` 로 다른 Control 을 넣을 수 있다.
+```xml
+<!-- case 1. text content-->
+<Button Content="버튼"/>
+
+<!-- case 2. control content -->
+<Button>
+    <Button.Content>
+        <StackPanel Orientation="Horizontal">
+            <CheckBox/>
+            <TextBlock Text="버튼"/>
+        </StackPanel>
+    </Button.Content>
+</Button>
+```
+- ```Content``` 로 문자열만 입력된 경우는 내부적으로 ```TextBlock```이 추가됐다고 볼 수 있다.
+```xml
+<!-- case 1 -->
+<Button Content="버튼"/>
+
+<!-- case 2 -->
+<Button>
+    <Button.Content>
+        버튼
+    </Button.Content>
+</Button>
+
+<!-- case 3 -->
+<Button>
+    <Button.Content>
+        <TextBlock Text="버튼"/>
+    </Button.Content>
+</Button>
+```
+- ```ContentTemplate``` 프로퍼티를 갖고 있다.
+- ```ContentTemplate``` 타입은 ```DateTemplate``` 으로 Resource에 정의한 DataTemplate을 넣을 수 있다.
+```xml
+<Window.Resources>
+    <!-- DataTemplate example -->
+    <DataTemplate x:Key="buttonContentTemplate">
+        <TextBlock Text="버튼"/>
+    </DataTemplate>
+</Window.Resources>
+
+<Grid>
+    <!-- Use ContentTemplate -->
+    <Button ContentTemplate="{StaticResource buttonContentTemplate}"/>    
+</Grid>
+```
+- Xaml 에서 ```Content``` 태그는 생략 가능하다.
+```xml
+<Button>
+    <Button.Content>
+        버튼
+    </Button.Content>
+</Button>
+
+<!-- Content Tag 생략 -->
+<Button>
+    버튼
+</Button>
+```
+
 | 클래스 | 부모 클래스 |
 |:------|:------------|
 | Button | ButtonBase |
