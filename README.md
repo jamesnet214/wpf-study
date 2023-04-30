@@ -9,6 +9,7 @@ WPF 스터디 시즌 3 문서입니다.
 - [x] 3. [DataTemplate](#3-datatemplate)
 - [x] 4. [Trigger](#4-trigger)
 - [x] 5. [ContentControl](#5-contentcontrol)
+------------------------------------------------------
 - [ ] 6. ListBox
 - [ ] 7. ListBoxItem
 - [ ] 8. ItemsControl
