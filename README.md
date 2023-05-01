@@ -170,7 +170,47 @@ WPF 스터디 시즌 3 문서입니다.
 ## 4. Trigger
 
 - ```TriggerBase```를 상속한다.
-- TBD...
+- 조건을 설정하고, 조건 만족시 변경할 상태(or Action)를 정의.
+- 조건 불만족 시 이전 상태로 복귀.
+- 주요 프로퍼티
+
+| Name | Type | Note |
+|:-----|:-----|:-----|
+| `Property` | `DependencyProperty` | 감시 대상(Control)의 Property(DependencyProperty) |
+| `Value` | `object` | 설정한 `Property` 와 비교할 값 |
+| `Setters` | `SetterBaseCollection` | Trigger 조건 만족 시 적용할 Setter 목록 (복수 Setter 설정 가능) |
+
+```xml
+<Button Content="버튼">
+    <Button.Style>
+        <Style TargetType="{x:Type Button}">
+            <Style.Triggers>
+            
+                <!-- Trigger 1. 감시 대상 Button의 IsMouseOver 값이 True 일 때 -->
+                <!-- Foreground = Red, Cursor = Hand 로 변경 -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+                
+                <!-- Trigger 2. 감시 대상 Button의 IsPressed 값이 True 일 때 -->
+                <!-- Foreground = White 로 변경 -->
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Foreground" Value="White"/>
+                    
+                    <!-- Setters 태그 생략 가능
+                    <Trigger.Setters>
+                        <Setter Property="Foreground" Value="White"/>
+                    </Trigger.Setters>
+                    -->
+                </Trigger>
+                
+            </Style.Triggers>
+        </Style>
+    </Button.Style>
+</Button>
+```
+
 
 ## 5. ContentControl
 
