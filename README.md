@@ -2,9 +2,11 @@
 
 WPF 스터디 시즌 3 문서입니다.
 
-관련링크
+추가 내용
 - [Git](https://blog.naver.com/jamesnet214/222991222558)
 - [Markdown](https://blog.naver.com/jamesnet214/222983692433)
+- GitHub Profile
+- Wiki
 
 ## Content
 
