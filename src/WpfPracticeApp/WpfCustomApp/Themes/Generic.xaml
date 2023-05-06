@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/WpfCustomApp;component/Themes/Units/StudyButton.xaml"/>
+        <ResourceDictionary Source="/WpfCustomApp;component/Themes/Units/StudyListBoxItem.xaml"/>
+        <ResourceDictionary Source="/WpfCustomApp;component/Themes/Units/StudyListBox.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
