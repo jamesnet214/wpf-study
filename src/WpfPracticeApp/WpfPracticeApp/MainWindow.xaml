@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <ListBox x:Name="lbx" Style="{StaticResource ListBoxStyle}"                
+        <ListBox x:Name="lbx" Style="{StaticResource ListBoxStyle}"   
                  HorizontalContentAlignment="Stretch"
                  Tag="데이터 목록">
+            
         </ListBox>
     </StackPanel>
 </Window>
