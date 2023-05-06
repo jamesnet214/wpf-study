@@ -2,13 +2,14 @@
 
 WPF 스터디 시즌 3 문서입니다.
 
-추가 내용
+참고 내용
 - [Git](https://blog.naver.com/jamesnet214/222991222558)
 - [Markdown](https://blog.naver.com/jamesnet214/222983692433)
 - GitHub Profile
 - GitHub Wiki
 - Nuget Dark Theme
 - [ListBox Exam](https://blog.naver.com/jamesnet214/222975314777)
+- [AutoGrid.Core](https://blog.naver.com/jamesnet214/222982802666)
 
 ## Content
 
