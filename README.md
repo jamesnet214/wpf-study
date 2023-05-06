@@ -2,6 +2,10 @@
 
 WPF 스터디 시즌 3 문서입니다.
 
+관련링크
+- [Git](https://blog.naver.com/jamesnet214/222991222558)
+- [Markdown](https://blog.naver.com/jamesnet214/222983692433)
+
 ## Content
 
 - [x] 1. [Button](#1-button)
@@ -17,6 +21,7 @@ WPF 스터디 시즌 3 문서입니다.
 - [ ] 10. GetContainerItemForOverride
 - [ ] 11. AutoGrid.Core
 - [ ] 12. CommunityToolkit
+
 - [ ] 13. NugetPackage
 
 ## 1. Button
