@@ -20,7 +20,7 @@ WPF 스터디 시즌 3 문서입니다.
 - [x] 4. [Trigger](#4-trigger)
 - [x] 5. [ContentControl](#5-contentcontrol)
 ------------------------------------------------------
-- [ ] 6. ListBox
+- [ ] 6. [ListBox](#6-listbox)
 - [ ] 7. ListBoxItem
 - [ ] 8. ItemsControl
 - [ ] 9. CustomControl
@@ -318,3 +318,17 @@ WPF 스터디 시즌 3 문서입니다.
 | UserControl | ContentControl |
 | ScrollViewer | ContentControl |
 
+
+
+## 6. ListBox
+
+- 다음과 같은 상속 관계를 가진다
+  - `ItemsControl` -> `Selector` -> `ListBox`
+- 주요 프로퍼티
+
+| Name | Type | Content | Note|
+|:-----|:-----|:--------|:----|
+| `ItemsSource` | `IEnumerable` | `ListBoxItem`을 생성하기 위한 컬렉션 | `ItemsControl`에서 상속됨 |
+| `DisplayMemberPath` | `string` | `ListBoxItem`의 Content로 표시할 Path 이름. 바인딩 된 아이템 Source 객체의 프로퍼티 중 Content로 표시할 프로퍼티 이름으로 설정한다. | `ItemsControl`에서 상속됨 |
+| `SelectedItem` | `object` | <ul><li>선택된 첫번째 아이템<br>(여러개 선택 시 처음 선택된 아이템 하나만 반환)</li><li>선택된 항목이 없는 경우 null 반환</li></ul> | `Selector`에서 상속됨 |
+| `SelectionMode` | `SelectionMode`(Enum) | `ListBox` 의 선택 동작 정의 | <ul><li>`Single` : 하나만 선택 가능</li><li>`Multiple` : 한정자 키 누르지 않고 여러개 선택 가능</li><li>`Extended` : Shift 키 누른 상태로 여러개 선택 가능</li></ul> |
