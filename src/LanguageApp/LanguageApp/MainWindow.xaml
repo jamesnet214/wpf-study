@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageApp"
         mc:Ignorable="d"
+        Background="{DynamicResource Background}"
         Title="{DynamicResource Title}" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
         <ListBox ItemsSource="{Binding Languages}"
                  SelectedItem="{Binding Language}"
                  ItemTemplate="{StaticResource MenuitemTemplate}"/>
-    </Grid>
+        <ListBox ItemsSource="{Binding Themes}"
+                 SelectedItem="{Binding Theme}"
+                 ItemTemplate="{StaticResource MenuitemTemplate}"/>
+    </StackPanel>
 </Window>

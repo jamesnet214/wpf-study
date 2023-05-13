@@ -13,20 +13,31 @@ namespace LanguageApp
 {
     public class MainViewModel : ObservableObject
     {
-        private LanguageModel _languageModel;
+        private LanguageModel _language;
+        private ThemeModel _theme;
 
-        public List<LanguageModel> Languages { get; set; }
+        public List<LanguageModel> Languages { get; init; }
+        public List<ThemeModel> Themes { get; init; }
 
         public LanguageModel Language
         {
-            get => _languageModel;
-            set => SetProperty2(ref _languageModel, value, LanguageModelChanged);
+            get => _language;
+            set => SetProperty2(ref _language, value, LanguageChanged);
+        }
+
+        public ThemeModel Theme
+        {
+            get => _theme;
+            set => SetProperty2(ref _theme, value, ThemeChanged);
         }
 
         public MainViewModel()
         {
             Languages = GetLanguages();
-            Language= Languages.FirstOrDefault();   
+            Language = Languages.FirstOrDefault();
+
+            Themes = GetThemes();
+            Theme = Themes.FirstOrDefault();
         }
 
         private List<LanguageModel> GetLanguages()
@@ -38,9 +49,22 @@ namespace LanguageApp
             return source;
         }
 
-        private void LanguageModelChanged(LanguageModel value)
+        private List<ThemeModel> GetThemes()
+        {
+            List<ThemeModel> source = new();
+            source.Add(new ThemeModel().DataGen("DAK", "Dark"));
+            source.Add(new ThemeModel().DataGen("WHI", "White"));
+            return source;
+        }
+
+        private void LanguageChanged(LanguageModel value)
         {
             App.SwitchLanguage(value);
+        }
+
+        private void ThemeChanged(ThemeModel value)
+        {
+            App.SwitchTheme(value);
         }
 
         private void SetProperty2<T>(ref T value1, T value2, Action<T> changed, [CallerMemberName] string name = null)

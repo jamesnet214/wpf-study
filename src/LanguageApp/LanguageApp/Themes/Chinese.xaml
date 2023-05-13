@@ -6,4 +6,6 @@
     <clr:String x:Key="English">영어22</clr:String>
     <clr:String x:Key="Chinese">중국어22</clr:String>
     <clr:String x:Key="Japanese">일본어22</clr:String>
+    <clr:String x:Key="Dark">Dark33333</clr:String>
+    <clr:String x:Key="White">White33333</clr:String>
 </ResourceDictionary>
