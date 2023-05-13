@@ -350,3 +350,15 @@ WPF 스터디 시즌 3 문서입니다.
 - [ListBox](#6-listbox) 의 `ItemContainerStyle` 설정하여 Style을 적용할 수 있다.
 
 
+## 14. Bubbling / Tunneling
+
+- 이벤트의 순서는 `Tunneling` -> `Bubbling` 순서로 발생한다.
+
+### Tunneling
+
+- `Tunneling` 이벤트는 `UIElement`의 `Preview` 접두사가 붙은 이벤트이다.
+- `Tunneling` 이벤트는 `Tunneling` 이벤트를 처리하는 `Handler`가 없으면 `Bubbling` 이벤트를 처리하는 `Handler`를 찾는다.
+
+### Bubbling
+
+- `Bubbling` 이벤트는 `Tunneling` 이벤트와 반대로 `UIElement`의 `Preview` 접두사가 붙지 않은 이벤트이다.
