@@ -14,5 +14,7 @@
         <ListBox ItemsSource="{Binding Themes}"
                  SelectedItem="{Binding Theme}"
                  ItemTemplate="{StaticResource MenuitemTemplate}"/>
+        <TreeView Style="{StaticResource TreeViewStyle}"
+                  ItemsSource="{Binding Teams}"/>
     </StackPanel>
 </Window>

@@ -31,6 +31,8 @@ namespace LanguageApp
             set => SetProperty2(ref _theme, value, ThemeChanged);
         }
 
+        public List<TeamModel> Teams { get; private set; }
+
         public MainViewModel()
         {
             Languages = GetLanguages();
@@ -38,6 +40,25 @@ namespace LanguageApp
 
             Themes = GetThemes();
             Theme = Themes.FirstOrDefault();
+
+            Teams = GetTeams();
+        }
+
+        private List<TeamModel> GetTeams()
+        {
+            List<TeamModel> source = new();
+            source.Add(new TeamModel().DataGen("EPL", null, "잉글랜드"));
+            source.Add(new TeamModel().DataGen("SPL", null, "스페인"));
+            source.Add(new TeamModel().DataGen("ITL", null, "이탈리아"));
+
+            source[0].Children.Add(new TeamModel().DataGen("TOT", "EPL", "토트넘"));
+            source[0].Children.Add(new TeamModel().DataGen("ARS", "EPL", "아스널"));
+            source[0].Children.Add(new TeamModel().DataGen("CHE", "EPL", "첼시"));
+
+            source[0].Children[0].Children.Add(new TeamModel().DataGen("07", "TOT", "손흥민"));
+            source[0].Children[0].Children.Add(new TeamModel().DataGen("19", "TOT", "이강인"));
+            source[0].Children[0].Children.Add(new TeamModel().DataGen("05", "TOT", "김민재"));
+            return source;
         }
 
         private List<LanguageModel> GetLanguages()
