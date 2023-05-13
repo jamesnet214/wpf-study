@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:clr="clr-namespace:System;assembly=mscorlib">
+    <clr:String x:Key="Title">James 앱22</clr:String>
+    <clr:String x:Key="Korean">한국어22</clr:String>
+    <clr:String x:Key="English">영어22</clr:String>
+    <clr:String x:Key="Chinese">중국어22</clr:String>
+    <clr:String x:Key="Japanese">일본어22</clr:String>
+</ResourceDictionary>

@@ -34,6 +34,7 @@ namespace LanguageApp
             List<LanguageModel> source = new();
             source.Add(new LanguageModel().DataGen("KOR", "Korean"));
             source.Add(new LanguageModel().DataGen("ENG", "English"));
+            source.Add(new LanguageModel().DataGen("CHN", "Chinese"));
             return source;
         }
 

@@ -9,6 +9,6 @@
     <Grid>
         <ListBox ItemsSource="{Binding Languages}"
                  SelectedItem="{Binding Language}"
-                 DisplayMemberPath="Name"/>
+                 ItemTemplate="{StaticResource MenuitemTemplate}"/>
     </Grid>
 </Window>

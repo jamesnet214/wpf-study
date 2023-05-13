@@ -20,10 +20,12 @@ namespace LanguageApp
         {
             ResourceDictionary korean = GetResource("Korean");
             ResourceDictionary english = GetResource("English");
+            ResourceDictionary chinese = GetResource("Chinese");
 
             _languages = new();
             _languages.Add("KOR", korean);
             _languages.Add("ENG", english);
+            _languages.Add("CHN", chinese);
 
             //_currentLanguage = korean;
             //Resources.MergedDictionaries.Add(korean);
