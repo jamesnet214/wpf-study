@@ -28,7 +28,6 @@ WPF 스터디 시즌 3 문서입니다.
 - [ ] 10. GetContainerItemForOverride
 - [ ] 11. AutoGrid.Core
 - [ ] 12. CommunityToolkit
-
 - [ ] 13. NugetPackage
 --------------------------------------------------------
 - [ ] 14. Bubbling / Tunneling
