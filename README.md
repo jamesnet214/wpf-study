@@ -369,3 +369,10 @@ Thanks go to these wonderful people (List made with [contrib.rocks](https://cont
 ### Bubbling
 
 - `Bubbling` 이벤트는 `Tunneling` 이벤트와 반대로 `UIElement`의 `Preview` 접두사가 붙지 않은 이벤트이다.
+
+
+
+## Blog
+
+- [jamesnet214](https://blog.naver.com/jamesnet214).
+
