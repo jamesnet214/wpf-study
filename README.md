@@ -2,6 +2,11 @@
 
 WPF 스터디 시즌 3 문서입니다.
 
+### Contributors
+Thanks go to these wonderful people (List made with [contrib.rocks](https://contrib.rocks)):
+
+[![wpf-study Contributors](https://contrib.rocks/image?repo=jamesnet214/wpf-study)](https://github.com/jamesnet214/wpf-study/graphs/contributors)
+
 참고 내용
 - [Git](https://blog.naver.com/jamesnet214/222991222558)
 - [Markdown](https://blog.naver.com/jamesnet214/222983692433)
@@ -364,8 +369,3 @@ WPF 스터디 시즌 3 문서입니다.
 ### Bubbling
 
 - `Bubbling` 이벤트는 `Tunneling` 이벤트와 반대로 `UIElement`의 `Preview` 접두사가 붙지 않은 이벤트이다.
-
-### Contributors
-Thanks go to these wonderful people (List made with [contrib.rocks](https://contrib.rocks)):
-https://github.com/jamesnet214/wpf-study
-[![wpf-study Contributors](https://contrib.rocks/image?repo=jamesnet214/wpf-study)](https://github.com/jamesnet214/wpf-study/graphs/contributors)
