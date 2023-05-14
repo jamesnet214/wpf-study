@@ -10,8 +10,10 @@ WPF 스터디 시즌 3 문서입니다.
 - [Nuget Dark Theme](https://forum.dotnetdev.kr/t/infragistics-theme-metrodark-wpf/4790)
 - [ListBox Exam](https://blog.naver.com/jamesnet214/222975314777)
 - [AutoGrid.Core](https://blog.naver.com/jamesnet214/222982802666)
-- [MAUI Sample App](https://github.com/jamesnet214/maui-premierleague)
 - [XAML 코드 자동정렬 도구](https://github.com/Xavalon/XamlStyler/)
+
+- [MAUI Sample App](https://github.com/jamesnet214/maui-premierleague)
+- [LukeWire MAUI Sample App](https://github.com/lukewire129/DotnetMauiSample)
 
 ## Content
 
