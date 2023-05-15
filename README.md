@@ -377,3 +377,5 @@ Thanks go to these wonderful people (List made with [contrib.rocks](https://cont
 - [Arong Note](https://arong.info/). : 일상 생활 내용 및 IT 프로그램 기술 관련 정보 정리하는 공간
 - [jamesnet214](https://blog.naver.com/jamesnet214). : WPF 개발 내용 및 인생 팁
 - [kjun](https://kjun.kr/). : C# 개발 내용 정리
+- [Kratos](https://christian289.github.io/). : C# 관련 
+
