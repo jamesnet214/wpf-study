@@ -19,6 +19,7 @@ Thanks go to these wonderful people (List made with [contrib.rocks](https://cont
 
 - [MAUI Sample App](https://github.com/jamesnet214/maui-premierleague)
 - [LukeWire MAUI Sample App](https://github.com/lukewire129/DotnetMauiSample)
+- [MauiReactor Sample App](https://github.com/adospace/mauireactor-samples)
 
 ## Content
 
