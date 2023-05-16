@@ -1,6 +1,6 @@
 # WPF Study
 
-WPF 스터디 시즌 3 문서입니다.
+WPF 스터디 시즌 3 문서입니다!
 
 ### Contributors
 Thanks go to these wonderful people (List made with [contrib.rocks](https://contrib.rocks)):
