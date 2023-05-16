@@ -2,12 +2,15 @@
 
 WPF 스터디 시즌 3 문서입니다!
 
+---
 ### Contributors
 Thanks go to these wonderful people (List made with [contrib.rocks](https://contrib.rocks)):
 
 <a href="https://github.com/jamesnet214/wpf-study/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=jamesnet214/wpf-study" />
 </a>
+
+---
 
 참고 내용
 - [Git](https://blog.naver.com/jamesnet214/222991222558)
