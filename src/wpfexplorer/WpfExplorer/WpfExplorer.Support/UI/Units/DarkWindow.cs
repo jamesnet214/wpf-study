@@ -10,5 +10,11 @@ namespace WpfExplorer.Support.UI.Units
             DefaultStyleKeyProperty.OverrideMetadata(typeof(DarkWindow),
                 new FrameworkPropertyMetadata(typeof(DarkWindow)));
         }
+
+        public DarkWindow()
+        {
+            WindowStyle = WindowStyle.None;
+            AllowsTransparency = true;
+        }
     }
 }

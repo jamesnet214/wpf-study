@@ -15,7 +15,7 @@ namespace WpfExplorer
         {
             base.OnStartup(e);
 
-            DarkWindow win = new DarkWindow();
+            ExplorerWindow win = new ExplorerWindow();
             win.Title = "James";
             win.ShowDialog();
         }
