@@ -2,6 +2,7 @@
 using Jamesnet.Wpf.Controls;
 using Jamesnet.Wpf.Mvvm;
 using Prism.Ioc;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,26 @@ namespace WpfExplorer.Forms.Local.ViewModels
     public partial class ExplorerViewModel : ObservableBase, IViewLoadable
     {
         private readonly IContainerProvider _containerProvider;
-
+        private readonly IRegionManager _regionManager;
         [ObservableProperty]
         private object _content;
 
-        public ExplorerViewModel(DirectoryManager directoryManager, IContainerProvider containerProvider) 
+        public ExplorerViewModel(DirectoryManager directoryManager, IContainerProvider containerProvider, IRegionManager regionManager) 
         {
             _containerProvider = containerProvider;
+            _regionManager = regionManager;
         }
 
         public void OnLoaded(IViewable view)
         {
             IViewable main = _containerProvider.Resolve<IViewable>("MainContent");
-            Content = main;
+            IRegion mainRegion = _regionManager.Regions["MainRegion"];
+
+            if (!mainRegion.Views.Contains(main))
+            {
+                mainRegion.Add(main);
+            }
+            mainRegion.Activate(main);
         }
     }
 }

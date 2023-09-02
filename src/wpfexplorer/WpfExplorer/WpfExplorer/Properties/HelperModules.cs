@@ -18,6 +18,7 @@ namespace WpfExplorer.Properties
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<DirectoryManager>();
+            containerRegistry.RegisterSingleton<FileService>();
         }
     }
 }
