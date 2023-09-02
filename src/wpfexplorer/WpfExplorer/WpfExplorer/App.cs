@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jamesnet.Wpf.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +10,11 @@ using WpfExplorer.Support.UI.Units;
 
 namespace WpfExplorer
 {
-    internal class App : Application
+    internal class App : JamesApplication
     {
-        protected override void OnStartup(StartupEventArgs e)
+        protected override Window CreateShell()
         {
-            base.OnStartup(e);
-
-            ExplorerWindow win = new ExplorerWindow();
-            win.Title = "James";
-            win.ShowDialog();
+            return new ExplorerWindow();
         }
     }
 }

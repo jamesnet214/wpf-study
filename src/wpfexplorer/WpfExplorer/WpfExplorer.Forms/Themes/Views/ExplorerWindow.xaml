@@ -10,9 +10,7 @@
         <Setter Property="Title" Value="Explorer"/>
         <Setter Property="Content">
             <Setter.Value>
-                <units:FolderTreeView>
-                    <units:FolderTreeItem Header="FOlderTreeItem"/>
-                </units:FolderTreeView>
+                <ContentControl Content="{Binding Content}"/>
             </Setter.Value>
         </Setter>
     </Style>

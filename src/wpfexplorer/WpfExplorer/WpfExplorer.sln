@@ -5,9 +5,11 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer", "WpfExplorer\WpfExplorer.csproj", "{30B8B73F-46E7-46A3-AC2E-2734298A4B9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Support", "WpfExplorer.Support\WpfExplorer.Support.csproj", "{41A608B6-C07E-4AAC-BB74-00FEA262F071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Support", "WpfExplorer.Support\WpfExplorer.Support.csproj", "{41A608B6-C07E-4AAC-BB74-00FEA262F071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Forms", "WpfExplorer.Forms\WpfExplorer.Forms.csproj", "{9404023E-F3C8-4E54-9F7F-6FF62D10BB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Forms", "WpfExplorer.Forms\WpfExplorer.Forms.csproj", "{9404023E-F3C8-4E54-9F7F-6FF62D10BB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Main", "WpfExplorer.Main\WpfExplorer.Main.csproj", "{695881FF-C363-42E9-B256-7F0886B60A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9404023E-F3C8-4E54-9F7F-6FF62D10BB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9404023E-F3C8-4E54-9F7F-6FF62D10BB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9404023E-F3C8-4E54-9F7F-6FF62D10BB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695881FF-C363-42E9-B256-7F0886B60A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695881FF-C363-42E9-B256-7F0886B60A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695881FF-C363-42E9-B256-7F0886B60A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695881FF-C363-42E9-B256-7F0886B60A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
