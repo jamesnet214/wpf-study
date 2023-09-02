@@ -3,6 +3,7 @@
                     xmlns:units="clr-namespace:WpfExplorer.Support.UI.Units">
     <Style TargetType="{x:Type units:DarkWindow}">
         <Setter Property="Background" Value="#252525"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="BorderBrush" Value="#141414"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -44,8 +45,7 @@
                             <units:MaximizeButton Grid.Column="2"/>
                             <units:CloseButton Grid.Column="3"/>
 
-                            <ContentPresenter Grid.Row="0"
-                                              ContentSource="Tag"/>
+                            <TextBlock Text="{TemplateBinding Title}"/>
 
                             <ContentPresenter Grid.Row="1" Grid.ColumnSpan="4"
                                               ContentSource="Content"/>
