@@ -17,11 +17,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:ExpandButton}">
                     <Border Background="Transparent">
-                        <james:JamesIcon x:Name="icon" 
-                                         Style="{StaticResource ChevronRight}"
-                                         Icon="ChevronRight"
-                                         Fill="{TemplateBinding Foreground}"
-                                         Margin="10 0 4 0"/>
+                        <ContentPresenter/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">

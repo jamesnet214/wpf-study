@@ -28,14 +28,20 @@ namespace WpfExplorer.Forms.Local.ViewModels
 
         public void OnLoaded(IViewable view)
         {
-            IViewable main = _containerProvider.Resolve<IViewable>("MainContent");
-            IRegion mainRegion = _regionManager.Regions["MainRegion"];
+            ImportContent("MainContent", "MainRegion");
+            ImportContent("LocationContent", "LocationRegion");
+        }
 
-            if (!mainRegion.Views.Contains(main))
+        private void ImportContent(string contentName, string regionName)
+        {
+            IViewable content = _containerProvider.Resolve<IViewable>(contentName);
+            IRegion region = _regionManager.Regions[regionName];
+
+            if (!region.Views.Contains(content))
             {
-                mainRegion.Add(main);
+                region.Add(content);
             }
-            mainRegion.Activate(main);
+            region.Activate(content);
         }
     }
 }

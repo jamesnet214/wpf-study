@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WpfExplorer.Location.UI.Views;
 using WpfExplorer.Main.UI.Views;
 
 namespace WpfExplorer.Properties
@@ -19,6 +20,7 @@ namespace WpfExplorer.Properties
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IViewable, MainContent>("MainContent");
+            containerRegistry.RegisterSingleton<IViewable, LocationContent>("LocationContent");
         }
     }
 }

@@ -9,8 +9,18 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type views:MainContent}">
-                    <units:FolderTreeView ItemsSource="{Binding Roots}"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <units:FolderTreeView ItemsSource="{Binding Roots}"
                                           SelectionCommand="{Binding FolderChangedCommand}"/>
+                        <DataGrid Grid.Column="1"
+                                  ItemsSource="{Binding Files}"/>
+
+                        
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

@@ -2,6 +2,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
+    xmlns:prism="http://prismlibrary.com/"
     xmlns:based="clr-namespace:WpfExplorer.Support.UI.Units;assembly=WpfExplorer.Support"
     xmlns:views="clr-namespace:WpfExplorer.Forms.UI.Views"
     xmlns:units="clr-namespace:WpfExplorer.Forms.UI.Units">
@@ -9,6 +10,11 @@
     <Style TargetType="{x:Type views:ExplorerWindow}" 
            BasedOn="{StaticResource {x:Type based:DarkWindow}}">
         <Setter Property="Title" Value="Explorer"/>
+        <Setter Property="Location">
+            <Setter.Value>
+                <james:JamesRegion RegionName="LocationRegion"/>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Content">
             <Setter.Value>
                 <james:JamesRegion RegionName="MainRegion"/>

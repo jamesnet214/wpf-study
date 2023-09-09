@@ -6,6 +6,9 @@
     xmlns:based="clr-namespace:WpfExplorer.Support.UI.Units;assembly=WpfExplorer.Support"
     xmlns:units="clr-namespace:WpfExplorer.Main.UI.Units">
 
+    <DataTemplate x:Key="TestTemplate">
+        
+    </DataTemplate>
 
     <Style TargetType="{x:Type units:FolderTreeItem}">
         <Setter Property="Background" Value="Transparent"/>

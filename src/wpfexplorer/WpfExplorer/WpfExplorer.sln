@@ -9,7 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Support", "WpfE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Forms", "WpfExplorer.Forms\WpfExplorer.Forms.csproj", "{9404023E-F3C8-4E54-9F7F-6FF62D10BB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Main", "WpfExplorer.Main\WpfExplorer.Main.csproj", "{695881FF-C363-42E9-B256-7F0886B60A3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Main", "WpfExplorer.Main\WpfExplorer.Main.csproj", "{695881FF-C363-42E9-B256-7F0886B60A3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Based", "Based", "{DD4BBB69-27E7-4739-A72D-6F20F6ED277A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio", "Studio", "{E1105B6E-AC1F-4680-8F40-0DD24DE61759}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partial", "Partial", "{686EBCEE-AED0-442B-A4F5-5CF650B7BAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Location", "WpfExplorer.Location\WpfExplorer.Location.csproj", "{4973CC8A-9A82-4EFC-BD77-C7C77E8DC261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,20 @@ Global
 		{695881FF-C363-42E9-B256-7F0886B60A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{695881FF-C363-42E9-B256-7F0886B60A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{695881FF-C363-42E9-B256-7F0886B60A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4973CC8A-9A82-4EFC-BD77-C7C77E8DC261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4973CC8A-9A82-4EFC-BD77-C7C77E8DC261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4973CC8A-9A82-4EFC-BD77-C7C77E8DC261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4973CC8A-9A82-4EFC-BD77-C7C77E8DC261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30B8B73F-46E7-46A3-AC2E-2734298A4B9D} = {E1105B6E-AC1F-4680-8F40-0DD24DE61759}
+		{41A608B6-C07E-4AAC-BB74-00FEA262F071} = {DD4BBB69-27E7-4739-A72D-6F20F6ED277A}
+		{9404023E-F3C8-4E54-9F7F-6FF62D10BB79} = {686EBCEE-AED0-442B-A4F5-5CF650B7BAE1}
+		{695881FF-C363-42E9-B256-7F0886B60A3D} = {686EBCEE-AED0-442B-A4F5-5CF650B7BAE1}
+		{4973CC8A-9A82-4EFC-BD77-C7C77E8DC261} = {686EBCEE-AED0-442B-A4F5-5CF650B7BAE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {357D9794-127B-4A81-8234-B89FCD3D2313}
