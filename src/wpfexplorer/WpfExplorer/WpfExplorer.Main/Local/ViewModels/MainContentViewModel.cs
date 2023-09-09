@@ -14,17 +14,20 @@ namespace WpfExplorer.Main.Local.ViewModels
 {
     public partial class MainContentViewModel : ObservableBase
     {
+        private readonly FileService _fileService;
+
         public List<FolderInfo> Roots { get; init; }
 
         public MainContentViewModel(FileService fileService)
         {
-            Roots = fileService.GenerateRootNodes();
+            _fileService = fileService;
+            Roots = _fileService.GenerateRootNodes();
         }
 
         [RelayCommand]
         private void FolderChanged(FolderInfo item)
         {
-            item.Children.Clear();
+            _fileService.RefreshSubdirectories(item);
         }
     }
 }

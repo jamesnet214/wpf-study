@@ -1,6 +1,8 @@
 ﻿using Jamesnet.Wpf.Controls;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -45,6 +47,49 @@ namespace WpfExplorer.Support.Local.Helpers
                 FullPath = fullPath,
                 Children = new()
             };
+        }
+
+        public void RefreshSubdirectories(FolderInfo parent)
+        { 
+            var newChildren = FetchSubdirectories(parent);
+
+            var oldChildrenDict = parent.Children.ToDictionary(c => c.FullPath);
+            var newChildrenDict = newChildren.ToDictionary(c => c.FullPath);
+
+            var added = newChildren.Where(c => !oldChildrenDict.ContainsKey(c.FullPath)).ToList();
+            var removed = parent.Children.Where(c => !newChildrenDict.ContainsKey(c.FullPath)).ToList();
+
+            parent.Children.AddRange(added);
+            foreach (var child in removed)
+            {
+                parent.Children.Remove(child);
+            }
+        }
+
+        private List<FolderInfo> FetchSubdirectories(FolderInfo parent)
+        {
+            var children = new List<FolderInfo>();
+
+            try
+            {
+                var subDirs = Directory.GetDirectories(parent.FullPath);
+                foreach (var dir in subDirs)
+                {
+                    children.Add(new FolderInfo 
+                    {
+                        Depth = parent.Depth + 1,
+                        Name = Path.GetFileName(dir),
+                        IconType = IconType.Folder,
+                        FullPath = dir,
+                        Children = new()
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            return children;
         }
     }
 }
